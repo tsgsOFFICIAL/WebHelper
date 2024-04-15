@@ -1,0 +1,158 @@
+#cookie-banner {
+    --gap: 12px;
+    --border-radius: 10px;
+    --header-color: dodgerblue;
+    position: fixed;
+    z-index: 9999;
+    bottom: 5vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    align-self: center;
+    gap: var(--gap);
+    border-radius: var(--border-radius);
+    background-color: #191919;
+    pointer-events: none;
+    opacity: 0;
+    color: ghostwhite;
+}
+
+#cookie-banner.animateOut {
+    animation: slideDownCollapse .69s ease;
+}
+
+#cookie-banner.visible {
+    opacity: 1;
+    animation: slideUpExpand .69s ease;
+    pointer-events: auto;
+}
+
+#cookie-banner a:not(.underline) {
+    text-decoration: none;
+}
+
+#cookie-banner section {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    padding: 15px;
+}
+
+#cookie-banner section.header {
+    background-color: var(--header-color);
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+#cookie-banner section h2 {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    font-size: 4.4rem;
+}
+
+#cookie-banner section img {
+    width: 1.5em;
+}
+
+#cookie-banner section.content {
+    flex-direction: column;
+}
+
+#cookie-banner section h3,
+#cookie-banner section p {
+    width: 100%;
+}
+
+#cookie-banner section h3 {
+    font-size: 2.8rem;
+    margin-bottom: var(--gap);
+}
+
+#cookie-banner section p {
+    font-size: 1.6rem;
+    line-height: 1.69;
+}
+
+#cookie-banner section.action {
+    justify-content: space-between;
+}
+
+#cookie-banner section button,
+#cookie-banner section.action a {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    background: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1.6rem;
+    transition: 150ms ease;
+}
+
+#cookie-banner section span.btn-group {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 25px;
+}
+
+#cookie-banner section a#cookie-learn-more {
+    background: var(--background-color);
+}
+
+#cookie-banner section button#cookie-btn-reject {
+    background: var(--fail-color);
+}
+
+#cookie-banner section button#cookie-btn-accept {
+    background: var(--success-color);
+}
+
+#cookie-banner section button:hover,
+#cookie-banner section.action a:hover {
+    filter: opacity(.75);
+    transform: scale(.9);
+}
+
+@keyframes rotating {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes slideUpExpand {
+    0% {
+        transform: translateY(100vh) scale(.8);
+        opacity: .69;
+    }
+
+    80% {
+        transform: translateY(0) scale(.8);
+        opacity: .69;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDownCollapse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    80% {
+        transform: translateY(0) scale(.8);
+        opacity: .69;
+    }
+
+    100% {
+        transform: translateY(100vh) scale(.8);
+        opacity: .69;
+    }
+}
