@@ -1,3 +1,26 @@
+/* Example usage
+    // Get the element to inject into
+    var app = document.querySelector('#app');
+
+    // Malicious third-party code
+    let thirdPartyString = `<img src=x onerror="alert('XSS Attack')">`;
+    let thirdPartyURL = `javascript:alert('Another XSS Attack')`;
+
+    // Create an HTML string
+    let htmlStr = `<p>${thirdPartyString}</p>
+    <p><a href="${thirdPartyURL}">View My Profile</a></p>`;
+
+    // app.innerHTML += htmlStr; // THIS IS BAD
+    app.append(...cleanHTML(htmlStr, true));     
+*/
+
+/*
+    let dirtyHtml = '<div><script>alert("Hello, world!")</script><a href="javascript:alert(\'XSS Attack!\')">Click me</a></div>';
+    let sanitizedHtml = cleanHTML(dirtyHtml);
+    console.log(dirtyHtml);
+    console.log(sanitizedHtml);
+*/
+
 /**
  * Sanitize an HTML string
  * @param  {String} str The HTML string to sanitize
