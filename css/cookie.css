@@ -11,7 +11,7 @@
     align-self: center;
     gap: var(--gap);
     border-radius: var(--border-radius);
-    background-color: #191919;
+    background-color: #424242;
     pointer-events: none;
     opacity: 0;
     color: ghostwhite;
@@ -47,11 +47,18 @@
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
+    justify-content: space-between;
     font-size: 4.4rem;
+    width: 100%;
 }
 
 #cookie-banner section img {
     width: 1.5em;
+}
+
+#cookie-banner section img.rotating {
+    animation: rotating 4s linear infinite;
+
 }
 
 #cookie-banner section.content {
@@ -84,7 +91,7 @@
     padding: 10px 30px;
     background: none;
     cursor: pointer;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1.6rem;
     transition: 150ms ease;
 }
@@ -96,15 +103,15 @@
 }
 
 #cookie-banner section a#cookie-learn-more {
-    background: var(--background-color);
+    background: #252525;
 }
 
 #cookie-banner section button#cookie-btn-reject {
-    background: var(--fail-color);
+    background: var(--fail-color, rgb(255, 81, 81));
 }
 
 #cookie-banner section button#cookie-btn-accept {
-    background: var(--success-color);
+    background: var(--success-color, rgb(64, 237, 64));
 }
 
 #cookie-banner section button:hover,
