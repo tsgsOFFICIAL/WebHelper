@@ -7,6 +7,7 @@ WebHelper is a collection of HTML, CSS, and JavaScript snippets that I find usef
 -   [Introduction](#introduction)
 -   [Usage](#usage)
 -   [Contributing](#contributing)
+-   [Libraries](#libraries)
 
 ## Introduction
 
@@ -19,3 +20,16 @@ Feel free to browse through the repository and use any snippets that you find he
 ## Contributing
 
 If you have any useful snippets that you would like to contribute, I welcome pull requests. Please ensure that your code follows best practices and is well-documented. Additionally, make sure to include a brief description of the snippet and its intended use.
+
+## Libraries
+
+Here are some useful libraries that you can use in your web development projects:
+
+### CSS
+
+-   [CSS Gradient Generator](https://www.joshwcomeau.com/gradient-generator/):A GUI tool for creating CSS gradient effects.
+-   [Box Shadow Generator](https://cssgenerator.org/box-shadow-css-generator.html): A GUI tool for creating box shadow effects.
+
+### Images
+
+-   [SVG to CSS Converter](https://www.svgbackgrounds.com/tools/svg-to-css/): Convert SVG files to CSS background images.
