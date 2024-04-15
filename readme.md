@@ -23,6 +23,9 @@ If you have any useful snippets that you would like to contribute, I welcome pul
 
 ## Libraries
 
+-   [CSS](#css)
+-   [Images](#images)
+
 Here are some useful libraries that you can use in your web development projects:
 
 ### CSS
