@@ -7,7 +7,6 @@ WebHelper is a collection of HTML, CSS, and JavaScript snippets that I find usef
 -   [Introduction](#introduction)
 -   [Usage](#usage)
 -   [Contributing](#contributing)
--   [License](#license)
 
 ## Introduction
 
